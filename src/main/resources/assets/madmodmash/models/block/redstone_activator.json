@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "front": "madmodmash:block/redstone_activator_front",
+    "side": "madmodmash:block/redstone_activator_side",
+    "top": "madmodmash:block/redstone_activator_top",
+    "bottom": "madmodmash:block/redstone_activator_bottom"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "madmodmash:block/village_copper_crate"
+    },
+    "facing=east": {
+      "model": "madmodmash:block/village_copper_crate",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "madmodmash:block/village_copper_crate",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "madmodmash:block/village_copper_crate",
+      "y": 270
+    }
+  }
+}

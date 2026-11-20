@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "madmodmash:block/blood_ruby_block"
+  },
+  "render_type": "minecraft:translucent"
+}

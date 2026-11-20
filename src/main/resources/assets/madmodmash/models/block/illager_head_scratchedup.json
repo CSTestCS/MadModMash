@@ -1,0 +1,7 @@
+{
+  "parent": "madmodmash:block/illager_head_template",
+  "textures": {
+    "0": "madmodmash:block/illager_head_scratchedup",
+    "particle": "madmodmash:block/illager_head_scratchedup"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "madmodmash:item/statue_carver_spawn_egg"
+  }
+}

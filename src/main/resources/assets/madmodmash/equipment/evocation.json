@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "madmodmash:evocation"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "madmodmash:evocation"
+      }
+    ]
+  }
+}

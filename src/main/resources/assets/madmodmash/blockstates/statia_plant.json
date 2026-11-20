@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "picked=false": {
+      "model": "madmodmash:block/statia_plant"
+    },
+    "picked=true": {
+      "model": "madmodmash:block/statia_plant_picked"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "madmodmash:elder_guardian"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "madmodmash:elder_guardian"
+      }
+    ]
+  }
+}

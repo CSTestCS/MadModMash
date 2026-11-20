@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "madmodmash:block/wither_bone_block_side",
+    "end": "madmodmash:block/wither_bone_block_end"
+  }
+}

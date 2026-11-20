@@ -1,0 +1,7 @@
+{
+  "parent": "madmodmash:block/villager_statue_template",
+  "textures": {
+    "0": "madmodmash:block/end_stone_villager_statue",
+    "particle": "madmodmash:block/end_stone_villager_statue"
+  }
+}

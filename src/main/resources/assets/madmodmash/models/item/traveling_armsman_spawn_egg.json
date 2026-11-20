@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "madmodmash:item/traveling_armsman_spawn_egg"
+  }
+}

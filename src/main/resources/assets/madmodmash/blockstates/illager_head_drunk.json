@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "madmodmash:block/illager_head_drunk",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "madmodmash:block/illager_head_drunk",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "madmodmash:block/illager_head_drunk"
+    },
+    "facing=west": {
+      "model": "madmodmash:block/illager_head_drunk",
+      "y": 90
+    }
+  }
+}

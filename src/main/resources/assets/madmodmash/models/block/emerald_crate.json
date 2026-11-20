@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "front": "madmodmash:block/emerald_crate_front",
+    "side": "madmodmash:block/emerald_crate_side",
+    "top": "madmodmash:block/emerald_crate_top",
+    "bottom": "madmodmash:block/emerald_crate_top"
+  }
+}

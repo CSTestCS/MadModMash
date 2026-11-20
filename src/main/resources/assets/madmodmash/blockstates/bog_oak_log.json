@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "madmodmash:block/bog_oak_log"
+    },
+    "axis=z": {
+      "model": "madmodmash:block/bog_oak_log",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "madmodmash:block/bog_oak_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

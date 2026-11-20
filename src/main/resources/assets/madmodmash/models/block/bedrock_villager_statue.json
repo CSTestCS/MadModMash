@@ -1,0 +1,7 @@
+{
+  "parent": "madmodmash:block/villager_statue_template",
+  "textures": {
+    "0": "madmodmash:block/bedrock_villager_statue",
+    "particle": "madmodmash:block/bedrock_villager_statue"
+  }
+}

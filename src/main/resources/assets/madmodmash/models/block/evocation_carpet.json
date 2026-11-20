@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "madmodmash:block/evocation_carpet"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "madmodmash:block/tempesta_plant_picked"
+  },
+  "render_type": "minecraft:cutout"
+}

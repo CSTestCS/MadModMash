@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "madmodmash:mark_v"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "madmodmash:mark_v"
+      }
+    ]
+  }
+}

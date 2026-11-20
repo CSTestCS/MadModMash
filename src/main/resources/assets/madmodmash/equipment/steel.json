@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "madmodmash:steel"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "madmodmash:steel"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "madmodmash:astroite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "madmodmash:astroite"
+      }
+    ]
+  }
+}

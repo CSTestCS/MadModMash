@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "madmodmash:shulker"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "madmodmash:shulker"
+      }
+    ]
+  }
+}

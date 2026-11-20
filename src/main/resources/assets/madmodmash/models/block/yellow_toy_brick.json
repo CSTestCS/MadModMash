@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "madmodmash:block/yellow_toy_brick"
+  }
+}

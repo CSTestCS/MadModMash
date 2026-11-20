@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "picked=false": {
+      "model": "madmodmash:block/vistren_plant"
+    },
+    "picked=true": {
+      "model": "madmodmash:block/vistren_plant_picked"
+    }
+  }
+}

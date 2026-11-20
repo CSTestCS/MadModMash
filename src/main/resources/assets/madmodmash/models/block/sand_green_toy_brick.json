@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "madmodmash:block/sand_green_toy_brick"
+  }
+}

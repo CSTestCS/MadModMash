@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "picked=false": {
+      "model": "madmodmash:block/emerald_plant"
+    },
+    "picked=true": {
+      "model": "madmodmash:block/emerald_plant_picked"
+    }
+  }
+}

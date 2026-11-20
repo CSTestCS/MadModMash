@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "madmodmash:block/wither_bone_block"
+    },
+    "axis=z": {
+      "model": "madmodmash:block/wither_bone_block",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "madmodmash:block/wither_bone_block",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

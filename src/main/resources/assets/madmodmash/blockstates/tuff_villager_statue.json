@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "madmodmash:block/tuff_villager_statue",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "madmodmash:block/tuff_villager_statue",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "madmodmash:block/tuff_villager_statue"
+    },
+    "facing=west": {
+      "model": "madmodmash:block/tuff_villager_statue",
+      "y": 90
+    }
+  }
+}

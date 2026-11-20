@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "madmodmash:charred_log",
+    "madmodmash:charred_planks",
+    "madmodmash:bog_oak_log",
+    "madmodmash:bog_oak_planks",
+    "madmodmash:village_crate",
+    "madmodmash:copper_crate",
+    "madmodmash:village_copper_crate",
+    "madmodmash:iron_crate",
+    "madmodmash:gold_crate",
+    "madmodmash:emerald_crate",
+    "madmodmash:amethyst_crate",
+    "madmodmash:diamond_crate",
+    "madmodmash:netherite_crate",
+    "madmodmash:master_crate",
+    "madmodmash:alpha_loot_box",
+    "madmodmash:coin_barrel",
+    "madmodmash:contract_board",
+    "madmodmash:bounty_board",
+    "madmodmash:imperial_supply_crate"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "picked=false": {
+      "model": "madmodmash:block/patet_plant"
+    },
+    "picked=true": {
+      "model": "madmodmash:block/patet_plant_picked"
+    }
+  }
+}

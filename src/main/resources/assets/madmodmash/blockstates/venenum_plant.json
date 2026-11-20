@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "picked=false": {
+      "model": "madmodmash:block/venenum_plant"
+    },
+    "picked=true": {
+      "model": "madmodmash:block/venenum_plant_picked"
+    }
+  }
+}

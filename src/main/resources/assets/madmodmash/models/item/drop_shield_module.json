@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "madmodmash:item/drop_shield_module"
+  }
+}

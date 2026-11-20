@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="${mod_license}"
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="CSTestCS"
+logoFile="logo.png"
+description='''
+MadModMash: The Emerald Empire.
+
+Twenty-seven small mods and a decade of idea notebooks fused into one adventure.
+Rise through the ranks of the Emerald Empire by taking contracts, hunting champions,
+lighting bonfires and stopping the Illager Host, the Mortis Blight, the Herobrine Cult
+and the restless Wilds before their Wrath boils over into open events.
+'''
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"

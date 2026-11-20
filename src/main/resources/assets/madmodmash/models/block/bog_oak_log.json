@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "madmodmash:block/bog_oak_log_side",
+    "end": "madmodmash:block/bog_oak_log_end"
+  }
+}

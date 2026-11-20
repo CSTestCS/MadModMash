@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "madmodmash:item/traveling_locksmith_spawn_egg"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "front": "madmodmash:block/alpha_loot_box_front",
+    "side": "madmodmash:block/alpha_loot_box_side",
+    "top": "madmodmash:block/alpha_loot_box_top",
+    "bottom": "madmodmash:block/alpha_loot_box_top"
+  }
+}

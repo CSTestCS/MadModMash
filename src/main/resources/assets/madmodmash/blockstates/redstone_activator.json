@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "madmodmash:block/redstone_activator"
+    },
+    "facing=east": {
+      "model": "madmodmash:block/redstone_activator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "madmodmash:block/redstone_activator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "madmodmash:block/redstone_activator",
+      "y": 270
+    }
+  }
+}

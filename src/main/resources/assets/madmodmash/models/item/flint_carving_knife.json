@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "madmodmash:item/flint_carving_knife"
+  }
+}

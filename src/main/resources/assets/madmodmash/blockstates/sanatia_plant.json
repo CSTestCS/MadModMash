@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "picked=false": {
+      "model": "madmodmash:block/sanatia_plant"
+    },
+    "picked=true": {
+      "model": "madmodmash:block/sanatia_plant_picked"
+    }
+  }
+}

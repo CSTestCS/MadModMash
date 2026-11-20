@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "picked=false": {
+      "model": "madmodmash:block/tempesta_plant"
+    },
+    "picked=true": {
+      "model": "madmodmash:block/tempesta_plant_picked"
+    }
+  }
+}

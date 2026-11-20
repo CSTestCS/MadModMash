@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "front": "madmodmash:block/bounty_board_front",
+    "side": "madmodmash:block/bounty_board_side",
+    "top": "madmodmash:block/bounty_board_top",
+    "bottom": "madmodmash:block/bounty_board_top"
+  }
+}

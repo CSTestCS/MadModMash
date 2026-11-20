@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "madmodmash:block/mortem_plant"
+  },
+  "render_type": "minecraft:cutout"
+}

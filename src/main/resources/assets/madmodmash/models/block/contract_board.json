@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "front": "madmodmash:block/contract_board_front",
+    "side": "madmodmash:block/contract_board_side",
+    "top": "madmodmash:block/contract_board_top",
+    "bottom": "madmodmash:block/contract_board_top"
+  }
+}

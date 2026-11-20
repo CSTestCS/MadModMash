@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "madmodmash:block/visus_plant"
+  },
+  "render_type": "minecraft:cutout"
+}

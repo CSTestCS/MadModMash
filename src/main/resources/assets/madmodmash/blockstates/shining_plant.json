@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "picked=false": {
+      "model": "madmodmash:block/shining_plant"
+    },
+    "picked=true": {
+      "model": "madmodmash:block/shining_plant_picked"
+    }
+  }
+}

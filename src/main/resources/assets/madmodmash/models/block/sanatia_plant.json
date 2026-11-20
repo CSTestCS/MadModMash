@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "madmodmash:block/sanatia_plant"
+  },
+  "render_type": "minecraft:cutout"
+}

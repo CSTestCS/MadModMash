@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "madmodmash:village_iron"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "madmodmash:village_iron"
+      }
+    ]
+  }
+}

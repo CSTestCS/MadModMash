@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "madmodmash:item/herobrine_cultist_spawn_egg"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "madmodmash:block/alpha_loot_box"
+    },
+    "facing=east": {
+      "model": "madmodmash:block/alpha_loot_box",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "madmodmash:block/alpha_loot_box",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "madmodmash:block/alpha_loot_box",
+      "y": 270
+    }
+  }
+}

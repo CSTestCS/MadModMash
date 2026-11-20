@@ -1,0 +1,7 @@
+{
+  "assault_rifle_fire": {"sounds": ["madmodmash:assault_rifle_fire"], "subtitle": "subtitles.madmodmash.rifle_fire"},
+  "battle_rifle_fire": {"sounds": ["madmodmash:battle_rifle_fire"], "subtitle": "subtitles.madmodmash.rifle_fire"},
+  "beam_rifle_fire": {"sounds": ["madmodmash:beam_rifle_fire"], "subtitle": "subtitles.madmodmash.beam_fire"},
+  "rifle_equip": {"sounds": ["madmodmash:rifle_equip"], "subtitle": "subtitles.madmodmash.rifle_equip"},
+  "sad_song": {"sounds": [{"name": "madmodmash:sad_song", "stream": true}], "subtitle": "subtitles.madmodmash.sad_song"}
+}

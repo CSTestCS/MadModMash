@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "picked=false": {
+      "model": "madmodmash:block/armis_plant"
+    },
+    "picked=true": {
+      "model": "madmodmash:block/armis_plant_picked"
+    }
+  }
+}

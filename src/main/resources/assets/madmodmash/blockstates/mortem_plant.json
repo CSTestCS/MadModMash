@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "picked=false": {
+      "model": "madmodmash:block/mortem_plant"
+    },
+    "picked=true": {
+      "model": "madmodmash:block/mortem_plant_picked"
+    }
+  }
+}

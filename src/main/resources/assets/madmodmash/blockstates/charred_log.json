@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "madmodmash:block/charred_log"
+    },
+    "axis=z": {
+      "model": "madmodmash:block/charred_log",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "madmodmash:block/charred_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

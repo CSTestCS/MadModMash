@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "front": "madmodmash:block/village_copper_crate_front",
+    "side": "madmodmash:block/village_copper_crate_side",
+    "top": "madmodmash:block/village_copper_crate_top",
+    "bottom": "madmodmash:block/village_copper_crate_top"
+  }
+}

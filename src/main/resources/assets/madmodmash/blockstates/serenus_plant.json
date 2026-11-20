@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "picked=false": {
+      "model": "madmodmash:block/serenus_plant"
+    },
+    "picked=true": {
+      "model": "madmodmash:block/serenus_plant_picked"
+    }
+  }
+}

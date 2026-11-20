@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "madmodmash:block/packed_reeds_side",
+    "end": "madmodmash:block/packed_reeds_end"
+  }
+}

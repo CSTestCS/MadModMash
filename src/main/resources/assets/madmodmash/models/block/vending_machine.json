@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "front": "madmodmash:block/vending_machine_front",
+    "side": "madmodmash:block/vending_machine_side",
+    "top": "madmodmash:block/vending_machine_top",
+    "bottom": "madmodmash:block/vending_machine_top"
+  }
+}
