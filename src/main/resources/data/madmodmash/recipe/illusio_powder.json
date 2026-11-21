@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:patet_powder",
+    "minecraft:fermented_spider_eye"
+  ],
+  "result": {
+    "id": "madmodmash:illusio_powder",
+    "count": 2
+  }
+}

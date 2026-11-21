@@ -1,0 +1,24 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#minecraft:is_mountain",
+  "spawners": [
+    {
+      "type": "madmodmash:ram",
+      "count": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 2,
+        "max_inclusive": 4
+      },
+      "weight": 8
+    },
+    {
+      "type": "madmodmash:golden_eagle",
+      "count": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 2
+      },
+      "weight": 4
+    }
+  ]
+}

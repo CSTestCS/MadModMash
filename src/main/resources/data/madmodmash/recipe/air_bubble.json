@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:prismarine_crystals"
+  ],
+  "result": {
+    "id": "madmodmash:air_bubble",
+    "count": 2
+  }
+}

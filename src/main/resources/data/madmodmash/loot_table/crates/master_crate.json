@@ -1,0 +1,137 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 3,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:budding_amethyst",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bedrock",
+          "weight": 3,
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 8,
+              "max": 16
+            },
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spawner",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrier",
+          "weight": 2,
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 8,
+              "max": 16
+            },
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_portal_frame",
+          "weight": 2,
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 12
+            },
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:reinforced_deepslate",
+          "weight": 2,
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 12
+            },
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:command_block",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:light",
+          "weight": 2,
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 8,
+              "max": 16
+            },
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "weight": 1,
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 8,
+              "max": 16
+            },
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trial_spawner",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:vault",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "madmodmash:netherite_gildan",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "madmodmash:halo_of_life",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "madmodmash:halo_of_death",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

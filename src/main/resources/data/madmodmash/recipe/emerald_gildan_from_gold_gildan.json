@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:gold_gildan",
+    "madmodmash:gold_gildan",
+    "madmodmash:gold_gildan",
+    "madmodmash:gold_gildan",
+    "madmodmash:gold_gildan",
+    "madmodmash:gold_gildan",
+    "madmodmash:gold_gildan",
+    "madmodmash:gold_gildan",
+    "madmodmash:gold_gildan"
+  ],
+  "result": {
+    "id": "madmodmash:emerald_gildan",
+    "count": 1
+  }
+}

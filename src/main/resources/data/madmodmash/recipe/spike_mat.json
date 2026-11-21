@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NSN"
+  ],
+  "key": {
+    "N": "minecraft:iron_nugget",
+    "S": "madmodmash:salmon_scale"
+  },
+  "result": {
+    "id": "madmodmash:spike_mat",
+    "count": 3
+  }
+}

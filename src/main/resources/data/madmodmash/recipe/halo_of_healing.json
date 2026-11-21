@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " G ",
+    "GXG",
+    " G "
+  ],
+  "key": {
+    "G": "minecraft:gold_ingot",
+    "X": "minecraft:ghast_tear"
+  },
+  "result": {
+    "id": "madmodmash:halo_of_healing",
+    "count": 1
+  }
+}

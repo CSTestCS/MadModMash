@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:gold_block",
+    "madmodmash:fortuna_powder"
+  ],
+  "result": {
+    "id": "madmodmash:midas_draught",
+    "count": 1
+  }
+}

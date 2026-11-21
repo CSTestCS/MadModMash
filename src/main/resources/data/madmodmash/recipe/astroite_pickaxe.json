@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XXX",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "X": "madmodmash:astroite_chunk",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "madmodmash:astroite_pickaxe",
+    "count": 1
+  }
+}

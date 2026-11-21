@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "madmodmash:patch_mystery_plant",
+    "madmodmash:patch_mortasia"
+  ],
+  "step": "vegetal_decoration"
+}

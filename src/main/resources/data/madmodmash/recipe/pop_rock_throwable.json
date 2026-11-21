@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:pop_rock",
+    "minecraft:magma_cream"
+  ],
+  "result": {
+    "id": "madmodmash:pop_rock_throwable",
+    "count": 2
+  }
+}

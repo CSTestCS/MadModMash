@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": "madmodmash:unholy_cloth"
+  },
+  "result": {
+    "id": "madmodmash:evocation_chestplate",
+    "count": 1
+  }
+}

@@ -9,12 +9,9 @@
           "name": "madmodmash:visus_plant"
         }
       ],
-      "bonus_rolls": 0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ]
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      }
     }
   ]
 }

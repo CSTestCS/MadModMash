@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SOS",
+    "OEO",
+    "SOS"
+  ],
+  "key": {
+    "S": "madmodmash:spectral_scales",
+    "O": "minecraft:obsidian",
+    "E": "minecraft:ender_eye"
+  },
+  "result": {
+    "id": "madmodmash:continuum_block",
+    "count": 1
+  }
+}

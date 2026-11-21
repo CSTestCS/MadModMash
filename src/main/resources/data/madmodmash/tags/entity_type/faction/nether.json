@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:piglin",
+    "minecraft:piglin_brute",
+    "minecraft:blaze",
+    "minecraft:magma_cube",
+    "minecraft:hoglin",
+    "minecraft:ghast",
+    "minecraft:wither_skeleton",
+    "minecraft:zoglin",
+    "madmodmash:overworld_piglin",
+    "madmodmash:lava_slime",
+    "madmodmash:netherrack_slime",
+    "madmodmash:soul_slime",
+    "madmodmash:netherite_slime"
+  ]
+}

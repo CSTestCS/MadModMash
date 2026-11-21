@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:feather",
+    "minecraft:ink_sac",
+    "minecraft:emerald",
+    "minecraft:turtle_scute"
+  ],
+  "result": {
+    "id": "madmodmash:turtle_calling",
+    "count": 1
+  }
+}

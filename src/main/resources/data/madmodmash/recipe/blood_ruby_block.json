@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RGR",
+    "GBG",
+    "RGR"
+  ],
+  "key": {
+    "R": "madmodmash:ruby",
+    "G": "minecraft:glass",
+    "B": "minecraft:redstone_block"
+  },
+  "result": {
+    "id": "madmodmash:blood_ruby_block",
+    "count": 1
+  }
+}

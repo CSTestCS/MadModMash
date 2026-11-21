@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  X",
+    " X ",
+    "L  "
+  ],
+  "key": {
+    "X": "#minecraft:planks",
+    "L": "minecraft:leather"
+  },
+  "result": {
+    "id": "madmodmash:wooden_katana",
+    "count": 1
+  }
+}

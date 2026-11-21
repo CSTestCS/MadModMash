@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "madmodmash:banker",
+    "madmodmash:contractor",
+    "madmodmash:bounty_buyer",
+    "madmodmash:quartermaster"
+  ]
+}

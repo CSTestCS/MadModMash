@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:rubrum_ingot",
+    "madmodmash:rubrum_ingot",
+    "madmodmash:rubrum_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:krasny_shard",
+    "count": 1
+  }
+}

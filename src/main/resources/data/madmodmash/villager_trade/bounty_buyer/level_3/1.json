@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "madmodmash:gold_gildan",
+    "count": 1
+  },
+  "gives": {
+    "id": "madmodmash:pocketball",
+    "count": 4
+  },
+  "max_uses": 8,
+  "xp": 10,
+  "reputation_discount": 0.05
+}

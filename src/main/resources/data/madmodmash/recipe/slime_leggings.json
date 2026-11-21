@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": "minecraft:slime_ball"
+  },
+  "result": {
+    "id": "madmodmash:slime_leggings",
+    "count": 1
+  }
+}

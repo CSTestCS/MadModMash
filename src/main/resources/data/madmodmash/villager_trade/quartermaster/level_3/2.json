@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 2
+  },
+  "gives": {
+    "id": "minecraft:cartography_table",
+    "count": 1
+  },
+  "max_uses": 16,
+  "xp": 8,
+  "reputation_discount": 0.05
+}

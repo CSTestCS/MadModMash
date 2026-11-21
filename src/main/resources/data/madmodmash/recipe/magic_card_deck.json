@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PLP",
+    "PPP"
+  ],
+  "key": {
+    "P": "minecraft:paper",
+    "L": "minecraft:lapis_block"
+  },
+  "result": {
+    "id": "madmodmash:magic_card_deck",
+    "count": 1
+  }
+}

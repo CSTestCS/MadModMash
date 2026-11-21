@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  X",
+    " S ",
+    "L  "
+  ],
+  "key": {
+    "X": "#minecraft:stone_tool_materials",
+    "S": "minecraft:stick",
+    "L": "minecraft:leather"
+  },
+  "result": {
+    "id": "madmodmash:stone_truncheon",
+    "count": 1
+  }
+}

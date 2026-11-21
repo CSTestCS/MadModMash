@@ -68,8 +68,9 @@ public class LootEngram extends Entity {
     public void setTier(int t) { entityData.set(TIER, t); }
     @Override public void tick() {
         super.tick();
+        if (level().isClientSide()) return;
         setDeltaMovement(getDeltaMovement().scale(0.9));
-        move(MoverType.SELF, getDeltaMovement());
+        if (getDeltaMovement().lengthSqr() > 1.0E-6) move(MoverType.SELF, getDeltaMovement());
         if (level() instanceof ServerLevel sl) {
             if (tickCount % 10 == 0) sl.sendParticles(ParticleTypes.END_ROD, getX(), getY() + 0.8, getZ(), 1, 0.2, 0.2, 0.2, 0.01);
             if (tickCount > 12000) discard();

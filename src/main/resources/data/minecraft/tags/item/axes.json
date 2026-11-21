@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "madmodmash:village_copper_axe",
+    "madmodmash:village_iron_axe",
+    "madmodmash:steel_axe",
+    "madmodmash:ruby_axe",
+    "madmodmash:bedrock_axe",
+    "madmodmash:astroite_axe"
+  ]
+}

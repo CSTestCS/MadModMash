@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:iron_golem",
+    "minecraft:snow_golem",
+    "minecraft:copper_golem",
+    "madmodmash:redstone_golem",
+    "madmodmash:steel_golem",
+    "madmodmash:stone_golem",
+    "madmodmash:iron_mimic",
+    "madmodmash:redstone_minion",
+    "madmodmash:redstone_turret",
+    "madmodmash:redstone_nexus",
+    "madmodmash:emerald_nexus",
+    "madmodmash:llama_turret",
+    "madmodmash:summoner"
+  ]
+}

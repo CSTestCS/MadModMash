@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:mortem_powder",
+    "minecraft:soul_sand"
+  ],
+  "result": {
+    "id": "madmodmash:animus_powder",
+    "count": 2
+  }
+}

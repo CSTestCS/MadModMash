@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:tawnium_ingot",
+    "madmodmash:tawnium_ingot",
+    "madmodmash:tawnium_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:tawnium_shard",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:mortem_powder",
+    "minecraft:fermented_spider_eye"
+  ],
+  "result": {
+    "id": "madmodmash:dissolvo_powder",
+    "count": 2
+  }
+}

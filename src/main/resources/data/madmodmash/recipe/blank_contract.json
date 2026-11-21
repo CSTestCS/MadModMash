@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:ink_sac",
+    "madmodmash:copper_gildan"
+  ],
+  "result": {
+    "id": "madmodmash:blank_contract",
+    "count": 1
+  }
+}

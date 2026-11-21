@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "madmodmash:village_carving_knife",
+    "madmodmash:flint_carving_knife",
+    "madmodmash:copper_carving_knife",
+    "madmodmash:iron_carving_knife",
+    "madmodmash:salmon_carving_knife",
+    "madmodmash:golden_carving_knife",
+    "madmodmash:diamond_carving_knife",
+    "madmodmash:netherite_carving_knife"
+  ]
+}

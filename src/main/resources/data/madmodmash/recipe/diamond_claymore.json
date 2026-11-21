@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " X ",
+    " X ",
+    "XSX"
+  ],
+  "key": {
+    "X": "minecraft:diamond",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "madmodmash:diamond_claymore",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "CHC",
+    " S "
+  ],
+  "key": {
+    "C": "madmodmash:unholy_cloth",
+    "H": "minecraft:hay_block",
+    "S": "minecraft:string"
+  },
+  "result": {
+    "id": "madmodmash:effigy",
+    "count": 1
+  }
+}

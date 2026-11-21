@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:calcius_ingot",
+    "madmodmash:calcius_ingot",
+    "madmodmash:calcius_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:misket_shard",
+    "count": 1
+  }
+}

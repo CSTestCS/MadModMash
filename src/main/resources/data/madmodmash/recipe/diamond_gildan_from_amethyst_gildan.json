@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:amethyst_gildan",
+    "madmodmash:amethyst_gildan",
+    "madmodmash:amethyst_gildan",
+    "madmodmash:amethyst_gildan",
+    "madmodmash:amethyst_gildan",
+    "madmodmash:amethyst_gildan",
+    "madmodmash:amethyst_gildan",
+    "madmodmash:amethyst_gildan",
+    "madmodmash:amethyst_gildan"
+  ],
+  "result": {
+    "id": "madmodmash:diamond_gildan",
+    "count": 1
+  }
+}

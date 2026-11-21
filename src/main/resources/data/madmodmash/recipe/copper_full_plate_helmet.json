@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "key": {
+    "X": "minecraft:copper_block"
+  },
+  "result": {
+    "id": "madmodmash:copper_full_plate_helmet",
+    "count": 1
+  }
+}

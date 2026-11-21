@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:karite_ingot",
+    "madmodmash:karite_ingot",
+    "madmodmash:karite_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:szarite_shard",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " X",
+    "S "
+  ],
+  "key": {
+    "X": "minecraft:iron_ingot",
+    "S": "minecraft:bone"
+  },
+  "result": {
+    "id": "madmodmash:iron_carving_knife",
+    "count": 1
+  }
+}

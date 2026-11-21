@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "madmodmash:gold_gildan",
+    "count": 2
+  },
+  "gives": {
+    "id": "madmodmash:iron_truncheon",
+    "count": 1
+  },
+  "max_uses": 4,
+  "xp": 15,
+  "reputation_discount": 0.05
+}

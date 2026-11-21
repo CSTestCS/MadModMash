@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM"
+  ],
+  "key": {
+    "M": "madmodmash:magma_scales"
+  },
+  "result": {
+    "id": "madmodmash:magma_carpet",
+    "count": 3
+  }
+}

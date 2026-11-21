@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FWF",
+    "WFW",
+    "FWF"
+  ],
+  "key": {
+    "F": "minecraft:feather",
+    "W": "#minecraft:wool"
+  },
+  "result": {
+    "id": "madmodmash:padding",
+    "count": 4
+  }
+}

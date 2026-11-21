@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ender_pearl",
+    "minecraft:gold_nugget",
+    "madmodmash:embers"
+  ],
+  "result": {
+    "id": "madmodmash:recall_token",
+    "count": 2
+  }
+}

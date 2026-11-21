@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:undead",
+    "madmodmash:mortis_zombie",
+    "madmodmash:mortis_zombie_pigman",
+    "madmodmash:mortis_arm",
+    "madmodmash:mortis_chicken",
+    "madmodmash:mortis_cow",
+    "madmodmash:mortis_pig",
+    "madmodmash:mortis_sheep",
+    "madmodmash:mortis_egg",
+    "madmodmash:zombie_trudger",
+    "madmodmash:atlas_zombie",
+    "madmodmash:locust",
+    "madmodmash:locust_swarm",
+    "madmodmash:locust_horde"
+  ]
+}

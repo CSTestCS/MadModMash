@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " X ",
+    "XGX",
+    "S  "
+  ],
+  "key": {
+    "X": "minecraft:gold_ingot",
+    "G": "minecraft:glass_pane",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "madmodmash:golden_magnifier",
+    "count": 1
+  }
+}

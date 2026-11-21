@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:diamond_shovel",
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane"
+  ],
+  "result": {
+    "id": "madmodmash:phantom_shovel",
+    "count": 1
+  }
+}

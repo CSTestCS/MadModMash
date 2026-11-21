@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:lapis_lazuli",
+    "madmodmash:toxic_string"
+  ],
+  "result": {
+    "id": "madmodmash:toxin_card",
+    "count": 2
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:misket_shard",
+    "madmodmash:misket_shard",
+    "madmodmash:misket_shard"
+  ],
+  "result": {
+    "id": "madmodmash:limona_gem",
+    "count": 1
+  }
+}

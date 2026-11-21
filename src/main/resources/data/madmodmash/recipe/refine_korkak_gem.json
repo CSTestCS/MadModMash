@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:zawist_shard",
+    "madmodmash:zawist_shard",
+    "madmodmash:zawist_shard"
+  ],
+  "result": {
+    "id": "madmodmash:korkak_gem",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:sapphire_block"
+  ],
+  "result": {
+    "id": "madmodmash:sapphire",
+    "count": 9
+  }
+}

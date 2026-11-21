@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:bow",
+    "madmodmash:fibrous_flame",
+    "minecraft:fire_charge"
+  ],
+  "result": {
+    "id": "madmodmash:fireball_bow",
+    "count": 1
+  }
+}

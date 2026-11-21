@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FF",
+    "FF"
+  ],
+  "key": {
+    "F": "madmodmash:wolf_fur"
+  },
+  "result": {
+    "id": "madmodmash:fur_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "minecraft:dark_forest",
+  "spawners": [
+    {
+      "type": "madmodmash:summoner",
+      "count": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 1
+      },
+      "weight": 6
+    },
+    {
+      "type": "madmodmash:illager_priest",
+      "count": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 1
+      },
+      "weight": 2
+    },
+    {
+      "type": "madmodmash:illager_librarian",
+      "count": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 1
+      },
+      "weight": 2
+    },
+    {
+      "type": "madmodmash:illager_smith",
+      "count": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 1
+      },
+      "weight": 2
+    }
+  ]
+}

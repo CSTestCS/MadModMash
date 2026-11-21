@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:lutum_ingot",
+    "madmodmash:lutum_ingot",
+    "madmodmash:lutum_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:zawist_shard",
+    "count": 1
+  }
+}

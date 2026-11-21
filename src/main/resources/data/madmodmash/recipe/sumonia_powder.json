@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:luxine_powder",
+    "minecraft:emerald"
+  ],
+  "result": {
+    "id": "madmodmash:sumonia_powder",
+    "count": 2
+  }
+}

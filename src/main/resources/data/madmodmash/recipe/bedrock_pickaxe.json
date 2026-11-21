@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XXX",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "X": "madmodmash:bedrock_dust",
+    "S": "minecraft:blaze_rod"
+  },
+  "result": {
+    "id": "madmodmash:bedrock_pickaxe",
+    "count": 1
+  }
+}

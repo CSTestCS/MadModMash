@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XXX",
+    "XOX"
+  ],
+  "key": {
+    "X": "minecraft:obsidian",
+    "O": "madmodmash:herobrine_charm"
+  },
+  "result": {
+    "id": "madmodmash:herobrine_helmet",
+    "count": 1
+  }
+}

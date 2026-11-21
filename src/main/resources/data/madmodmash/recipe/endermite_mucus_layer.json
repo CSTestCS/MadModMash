@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM"
+  ],
+  "key": {
+    "M": "madmodmash:endermite_mucus"
+  },
+  "result": {
+    "id": "madmodmash:endermite_mucus_layer",
+    "count": 3
+  }
+}

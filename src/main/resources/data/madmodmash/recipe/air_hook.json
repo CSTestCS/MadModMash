@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "madmodmash:grapple_hook",
+    "madmodmash:zephyr_wisp",
+    "minecraft:feather"
+  ],
+  "result": {
+    "id": "madmodmash:air_hook",
+    "count": 1
+  }
+}

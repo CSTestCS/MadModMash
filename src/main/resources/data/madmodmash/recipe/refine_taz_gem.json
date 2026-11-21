@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:vert_shard",
+    "madmodmash:vert_shard",
+    "madmodmash:vert_shard"
+  ],
+  "result": {
+    "id": "madmodmash:taz_gem",
+    "count": 1
+  }
+}

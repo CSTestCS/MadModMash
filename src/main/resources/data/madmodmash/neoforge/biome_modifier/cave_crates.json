@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "madmodmash:cave_village_crate",
+    "madmodmash:cave_copper_crate",
+    "madmodmash:cave_crumbling_stone"
+  ],
+  "step": "underground_decoration"
+}

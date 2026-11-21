@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XI",
+    "S "
+  ],
+  "key": {
+    "X": "minecraft:netherrack",
+    "I": "minecraft:iron_nugget",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "madmodmash:netherrack_chisel",
+    "count": 1
+  }
+}

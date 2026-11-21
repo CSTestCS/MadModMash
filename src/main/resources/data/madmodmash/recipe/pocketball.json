@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " R ",
+    "NBN",
+    " W "
+  ],
+  "key": {
+    "R": "minecraft:red_dye",
+    "N": "minecraft:iron_nugget",
+    "B": "minecraft:stone_button",
+    "W": "minecraft:white_dye"
+  },
+  "result": {
+    "id": "madmodmash:pocketball",
+    "count": 2
+  }
+}

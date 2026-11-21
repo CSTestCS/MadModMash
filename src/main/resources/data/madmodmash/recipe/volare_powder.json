@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:alsus_powder",
+    "minecraft:phantom_membrane",
+    "minecraft:diamond"
+  ],
+  "result": {
+    "id": "madmodmash:volare_powder",
+    "count": 1
+  }
+}

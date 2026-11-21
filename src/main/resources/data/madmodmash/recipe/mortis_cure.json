@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:glistering_melon_slice",
+    "madmodmash:mortis_flesh",
+    "madmodmash:sanatia_powder"
+  ],
+  "result": {
+    "id": "madmodmash:mortis_cure",
+    "count": 1
+  }
+}

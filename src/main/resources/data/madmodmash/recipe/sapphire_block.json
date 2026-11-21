@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": "madmodmash:sapphire"
+  },
+  "result": {
+    "id": "madmodmash:sapphire_block",
+    "count": 1
+  }
+}

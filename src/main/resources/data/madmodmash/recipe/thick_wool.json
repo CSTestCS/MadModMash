@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WW",
+    "WW"
+  ],
+  "key": {
+    "W": "#minecraft:wool"
+  },
+  "result": {
+    "id": "madmodmash:thick_wool",
+    "count": 1
+  }
+}

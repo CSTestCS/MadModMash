@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "PPP",
+    "GCS",
+    "S  "
+  ],
+  "key": {
+    "P": "madmodmash:plasma_cell",
+    "S": "madmodmash:steel_ingot",
+    "G": "minecraft:spyglass",
+    "C": "madmodmash:redstone_core"
+  },
+  "result": {
+    "id": "madmodmash:beam_rifle",
+    "count": 1
+  }
+}

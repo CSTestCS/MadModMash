@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:wither_bone_block"
+  ],
+  "result": {
+    "id": "madmodmash:wither_bone",
+    "count": 9
+  }
+}

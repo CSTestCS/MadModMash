@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FF"
+  ],
+  "key": {
+    "F": "madmodmash:fur_block"
+  },
+  "result": {
+    "id": "madmodmash:fur_carpet",
+    "count": 3
+  }
+}

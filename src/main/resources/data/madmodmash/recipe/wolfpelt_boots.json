@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": "madmodmash:wolf_fur"
+  },
+  "result": {
+    "id": "madmodmash:wolfpelt_boots",
+    "count": 1
+  }
+}

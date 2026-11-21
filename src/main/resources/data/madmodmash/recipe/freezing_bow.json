@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:bow",
+    "minecraft:packed_ice",
+    "madmodmash:carulem_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:freezing_bow",
+    "count": 1
+  }
+}

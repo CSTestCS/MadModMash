@@ -1,0 +1,11 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "madmodmash:ore_ruby",
+    "madmodmash:ore_mystery",
+    "madmodmash:ore_plastic",
+    "madmodmash:ore_bedrock"
+  ],
+  "step": "underground_ores"
+}

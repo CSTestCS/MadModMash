@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": "madmodmash:steel_ingot"
+  },
+  "result": {
+    "id": "madmodmash:steel_chestplate",
+    "count": 1
+  }
+}

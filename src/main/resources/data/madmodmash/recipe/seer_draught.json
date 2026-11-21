@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "madmodmash:bee_lense",
+    "minecraft:glowstone_dust"
+  ],
+  "result": {
+    "id": "madmodmash:seer_draught",
+    "count": 1
+  }
+}

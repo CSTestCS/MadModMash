@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "madmodmash:gold_gildan",
+    "count": 1
+  },
+  "gives": {
+    "id": "madmodmash:wanted_poster",
+    "count": 1
+  },
+  "max_uses": 6,
+  "xp": 15,
+  "reputation_discount": 0.05
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:zoltite_shard",
+    "madmodmash:zoltite_shard",
+    "madmodmash:zoltite_shard"
+  ],
+  "result": {
+    "id": "madmodmash:sari_gem",
+    "count": 1
+  }
+}

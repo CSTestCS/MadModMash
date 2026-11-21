@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:splash_potion",
+    "minecraft:milk_bucket",
+    "madmodmash:arcanus_powder"
+  ],
+  "result": {
+    "id": "madmodmash:antipotion",
+    "count": 1
+  }
+}

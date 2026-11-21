@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "madmodmash:fire_card",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "madmodmash:ice_card",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "madmodmash:toxin_card",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "madmodmash:void_fire_card",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "madmodmash:xp_card",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "madmodmash:healing_card",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "madmodmash:golem_card",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

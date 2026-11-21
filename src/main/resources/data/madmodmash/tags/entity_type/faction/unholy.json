@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:phantom",
+    "minecraft:enderman",
+    "minecraft:endermite",
+    "madmodmash:herobrine",
+    "madmodmash:herobrine_cultist",
+    "madmodmash:headless_horseman",
+    "madmodmash:horseless_headman",
+    "madmodmash:living_head",
+    "madmodmash:proxy"
+  ]
+}

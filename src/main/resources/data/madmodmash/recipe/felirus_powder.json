@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:vistren_powder",
+    "minecraft:wheat"
+  ],
+  "result": {
+    "id": "madmodmash:felirus_powder",
+    "count": 2
+  }
+}

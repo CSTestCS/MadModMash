@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:plastic_gem",
+    "minecraft:light_gray_dye"
+  ],
+  "result": {
+    "id": "madmodmash:light_gray_toy_brick",
+    "count": 4
+  }
+}

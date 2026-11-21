@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "ROR",
+    "CCC"
+  ],
+  "key": {
+    "C": "minecraft:cobblestone",
+    "R": "minecraft:redstone",
+    "O": "minecraft:observer"
+  },
+  "result": {
+    "id": "madmodmash:redstone_activator",
+    "count": 1
+  }
+}

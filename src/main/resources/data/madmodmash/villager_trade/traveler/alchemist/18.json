@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "madmodmash:silver_gildan",
+    "count": 3
+  },
+  "gives": {
+    "id": "madmodmash:recall_token",
+    "count": 1
+  },
+  "max_uses": 4,
+  "xp": 1,
+  "reputation_discount": 0.05
+}

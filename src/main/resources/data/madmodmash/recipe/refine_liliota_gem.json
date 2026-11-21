@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:morium_shard",
+    "madmodmash:morium_shard",
+    "madmodmash:morium_shard"
+  ],
+  "result": {
+    "id": "madmodmash:liliota_gem",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RRR",
+    "RCR",
+    "RRR"
+  ],
+  "key": {
+    "R": "minecraft:redstone",
+    "C": "madmodmash:redstone_core"
+  },
+  "result": {
+    "id": "madmodmash:redstone_core_block",
+    "count": 1
+  }
+}

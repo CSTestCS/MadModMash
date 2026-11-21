@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "HLH",
+    "HDH"
+  ],
+  "key": {
+    "H": "minecraft:hay_block",
+    "L": "minecraft:lead",
+    "D": "minecraft:dispenser"
+  },
+  "result": {
+    "id": "madmodmash:llama_turret_kit",
+    "count": 1
+  }
+}

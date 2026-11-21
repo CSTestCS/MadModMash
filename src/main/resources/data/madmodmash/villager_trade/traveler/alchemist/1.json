@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "madmodmash:silver_gildan",
+    "count": 2
+  },
+  "gives": {
+    "id": "madmodmash:celerus_powder",
+    "count": 1
+  },
+  "max_uses": 6,
+  "xp": 1,
+  "reputation_discount": 0.05
+}

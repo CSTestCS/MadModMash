@@ -9,12 +9,9 @@
           "name": "madmodmash:nougat_toy_brick"
         }
       ],
-      "bonus_rolls": 0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ]
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      }
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:bog_oak_log",
+    "minecraft:mud"
+  ],
+  "result": {
+    "id": "madmodmash:bog_oak_planks",
+    "count": 4
+  }
+}

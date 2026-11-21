@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " E ",
+    "LCL",
+    "LLL"
+  ],
+  "key": {
+    "E": "madmodmash:embers",
+    "L": "#minecraft:logs",
+    "C": "minecraft:campfire"
+  },
+  "result": {
+    "id": "madmodmash:bonfire_kit",
+    "count": 1
+  }
+}

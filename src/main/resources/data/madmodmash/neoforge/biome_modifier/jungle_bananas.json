@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_jungle",
+  "features": [
+    "madmodmash:patch_banana"
+  ],
+  "step": "vegetal_decoration"
+}

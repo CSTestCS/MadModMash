@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:serenus_powder",
+    "minecraft:milk_bucket"
+  ],
+  "result": {
+    "id": "madmodmash:arcanus_powder",
+    "count": 2
+  }
+}

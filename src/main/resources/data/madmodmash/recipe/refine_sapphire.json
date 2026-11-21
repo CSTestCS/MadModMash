@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:mavium_shard",
+    "madmodmash:mavium_shard",
+    "madmodmash:mavium_shard"
+  ],
+  "result": {
+    "id": "madmodmash:sapphire",
+    "count": 1
+  }
+}

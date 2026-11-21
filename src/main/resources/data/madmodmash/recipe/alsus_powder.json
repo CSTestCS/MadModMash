@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:celerus_powder",
+    "minecraft:feather"
+  ],
+  "result": {
+    "id": "madmodmash:alsus_powder",
+    "count": 2
+  }
+}

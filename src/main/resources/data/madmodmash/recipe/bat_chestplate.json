@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": "madmodmash:bat_wing"
+  },
+  "result": {
+    "id": "madmodmash:bat_chestplate",
+    "count": 1
+  }
+}

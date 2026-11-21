@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PEP",
+    "EBE",
+    "PEP"
+  ],
+  "key": {
+    "P": "#minecraft:planks",
+    "E": "minecraft:emerald",
+    "B": "minecraft:barrel"
+  },
+  "result": {
+    "id": "madmodmash:imperial_supply_crate",
+    "count": 1
+  }
+}

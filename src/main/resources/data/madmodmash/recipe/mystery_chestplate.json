@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": "madmodmash:chainmail_sheet"
+  },
+  "result": {
+    "id": "madmodmash:mystery_chestplate",
+    "count": 1
+  }
+}

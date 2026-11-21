@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CG",
+    "GC"
+  ],
+  "key": {
+    "C": "minecraft:cobblestone",
+    "G": "minecraft:gravel"
+  },
+  "result": {
+    "id": "madmodmash:crumbling_stone",
+    "count": 4
+  }
+}

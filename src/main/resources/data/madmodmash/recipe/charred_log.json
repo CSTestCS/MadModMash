@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": "#minecraft:logs_that_burn",
+  "result": {
+    "id": "madmodmash:charred_log"
+  }
+}

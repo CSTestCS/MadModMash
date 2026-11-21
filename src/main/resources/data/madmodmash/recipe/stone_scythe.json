@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XXS",
+    "  S",
+    "  S"
+  ],
+  "key": {
+    "X": "#minecraft:stone_tool_materials",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "madmodmash:stone_scythe",
+    "count": 1
+  }
+}

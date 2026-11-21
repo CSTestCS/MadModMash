@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:steel_nugget",
+    "minecraft:gunpowder",
+    "minecraft:gunpowder"
+  ],
+  "result": {
+    "id": "madmodmash:frag_grenade",
+    "count": 2
+  }
+}

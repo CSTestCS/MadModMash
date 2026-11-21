@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "madmodmash:mortis_flesh",
+    "madmodmash:mortis_flesh"
+  ],
+  "result": {
+    "id": "madmodmash:zombie_plague_vial",
+    "count": 1
+  }
+}

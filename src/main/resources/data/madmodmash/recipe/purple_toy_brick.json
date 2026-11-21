@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:plastic_gem",
+    "minecraft:purple_dye"
+  ],
+  "result": {
+    "id": "madmodmash:purple_toy_brick",
+    "count": 4
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "madmodmash:silver_gildan",
+    "count": 1
+  },
+  "gives": {
+    "id": "madmodmash:lock_pick",
+    "count": 2
+  },
+  "max_uses": 8,
+  "xp": 1,
+  "reputation_discount": 0.05
+}

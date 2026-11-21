@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "madmodmash:copper_gildan",
+    "madmodmash:silver_gildan",
+    "madmodmash:gold_gildan",
+    "madmodmash:emerald_gildan",
+    "madmodmash:amethyst_gildan",
+    "madmodmash:diamond_gildan",
+    "madmodmash:netherite_gildan"
+  ]
+}

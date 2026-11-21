@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": "minecraft:lapis_lazuli"
+  },
+  "result": {
+    "id": "madmodmash:wizard_chestplate",
+    "count": 1
+  }
+}

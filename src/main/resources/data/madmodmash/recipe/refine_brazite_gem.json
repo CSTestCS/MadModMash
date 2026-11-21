@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:karamak_shard",
+    "madmodmash:karamak_shard",
+    "madmodmash:karamak_shard"
+  ],
+  "result": {
+    "id": "madmodmash:brazite_gem",
+    "count": 1
+  }
+}

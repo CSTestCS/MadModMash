@@ -7,20 +7,15 @@
         {
           "type": "minecraft:item",
           "name": "madmodmash:banana",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 2
-            }
-          ]
+          "modifier": {
+            "count": 2,
+            "type": "minecraft:set_count"
+          }
         }
       ],
-      "bonus_rolls": 0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ]
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      }
     }
   ]
 }

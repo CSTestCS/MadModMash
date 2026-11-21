@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:vistren_powder",
+    "madmodmash:celerus_powder",
+    "madmodmash:armis_powder"
+  ],
+  "result": {
+    "id": "madmodmash:chroma_powder",
+    "count": 2
+  }
+}

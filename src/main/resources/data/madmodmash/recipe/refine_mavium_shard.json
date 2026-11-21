@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:carulem_ingot",
+    "madmodmash:carulem_ingot",
+    "madmodmash:carulem_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:mavium_shard",
+    "count": 1
+  }
+}

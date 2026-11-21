@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:charred_log"
+  ],
+  "result": {
+    "id": "madmodmash:charred_planks",
+    "count": 4
+  }
+}

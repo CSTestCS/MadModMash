@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "minecraft:emerald_block",
+    "count": 1
+  },
+  "gives": {
+    "id": "madmodmash:gold_gildan",
+    "count": 1
+  },
+  "max_uses": 16,
+  "xp": 15,
+  "reputation_discount": 0.05
+}

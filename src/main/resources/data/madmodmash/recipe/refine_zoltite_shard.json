@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:flavum_ingot",
+    "madmodmash:flavum_ingot",
+    "madmodmash:flavum_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:zoltite_shard",
+    "count": 1
+  }
+}

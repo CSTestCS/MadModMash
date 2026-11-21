@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:bizarre_star",
+    "minecraft:iron_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:lucky_shuriken",
+    "count": 4
+  }
+}

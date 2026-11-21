@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "madmodmash:crushed_coal",
+    "madmodmash:crushed_coal"
+  ],
+  "result": {
+    "id": "madmodmash:steel_ingot",
+    "count": 1
+  }
+}

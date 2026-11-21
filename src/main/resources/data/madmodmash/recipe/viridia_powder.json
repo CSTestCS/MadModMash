@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:sanatia_powder",
+    "minecraft:bone_meal"
+  ],
+  "result": {
+    "id": "madmodmash:viridia_powder",
+    "count": 2
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": "madmodmash:bee_chitin"
+  },
+  "result": {
+    "id": "madmodmash:hive_chestplate",
+    "count": 1
+  }
+}

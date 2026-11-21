@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:plastic_gem",
+    "minecraft:orange_dye",
+    "minecraft:brown_dye"
+  ],
+  "result": {
+    "id": "madmodmash:nougat_toy_brick",
+    "count": 4
+  }
+}

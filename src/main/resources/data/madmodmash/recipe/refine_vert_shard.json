@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:viridius_ingot",
+    "madmodmash:viridius_ingot",
+    "madmodmash:viridius_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:vert_shard",
+    "count": 1
+  }
+}

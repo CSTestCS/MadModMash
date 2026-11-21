@@ -9,12 +9,9 @@
           "name": "madmodmash:redstone_core_block"
         }
       ],
-      "bonus_rolls": 0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ]
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      }
     }
   ]
 }

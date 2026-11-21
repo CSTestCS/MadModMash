@@ -6,7 +6,7 @@ modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
 authors="CSTestCS"
-logoFile="logo.png"
+iconFile="logo.png"
 description='''
 MadModMash: The Emerald Empire.
 

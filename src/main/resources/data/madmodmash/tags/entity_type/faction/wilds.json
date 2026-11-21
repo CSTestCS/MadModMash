@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:spider",
+    "minecraft:cave_spider",
+    "minecraft:creeper",
+    "minecraft:slime",
+    "minecraft:silverfish",
+    "minecraft:breeze",
+    "madmodmash:zephyr",
+    "madmodmash:iron_mimic",
+    "madmodmash:stone_slime",
+    "madmodmash:sand_slime",
+    "madmodmash:wood_slime",
+    "madmodmash:earth_slime",
+    "madmodmash:coal_slime",
+    "madmodmash:iron_slime",
+    "madmodmash:gold_slime",
+    "madmodmash:redstone_slime",
+    "madmodmash:lapis_slime",
+    "madmodmash:diamond_slime",
+    "madmodmash:emerald_slime",
+    "madmodmash:obsidian_slime",
+    "madmodmash:ice_slime",
+    "madmodmash:honey_slime",
+    "madmodmash:glass_slime",
+    "madmodmash:glowstone_slime",
+    "madmodmash:prismarine_slime"
+  ]
+}

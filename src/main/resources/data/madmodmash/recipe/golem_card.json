@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:lapis_lazuli",
+    "madmodmash:steel_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:golem_card",
+    "count": 2
+  }
+}

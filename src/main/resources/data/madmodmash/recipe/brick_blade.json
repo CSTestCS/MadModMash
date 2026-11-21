@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " P ",
+    " P ",
+    " S "
+  ],
+  "key": {
+    "P": "madmodmash:plastic_gem",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "madmodmash:brick_blade",
+    "count": 1
+  }
+}

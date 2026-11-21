@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " XX",
+    " XX",
+    "S  "
+  ],
+  "key": {
+    "X": "minecraft:iron_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "madmodmash:iron_club",
+    "count": 1
+  }
+}

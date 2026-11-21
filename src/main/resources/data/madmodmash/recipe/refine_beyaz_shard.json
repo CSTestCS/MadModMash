@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:albumin_ingot",
+    "madmodmash:albumin_ingot",
+    "madmodmash:albumin_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:beyaz_shard",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+  "key": {
+    "R": "minecraft:sugar_cane"
+  },
+  "result": {
+    "id": "madmodmash:packed_reeds",
+    "count": 1
+  }
+}

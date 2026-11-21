@@ -1,0 +1,335 @@
+"""Generate MadModMash assets + registration sources from content.py / entities.py."""
+import os, sys, json, shutil
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from PIL import Image
+import texlib
+from content import ITEMS, BLOCKS, ARMOR, MINERAL_IDS, POWDERS, GEN_ARMOR
+import entities
+
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..') + '/src/main'
+RES = ROOT + '/resources'
+A = RES + '/assets/madmodmash'
+D = RES + '/data/madmodmash'
+J = ROOT + '/java/com/madmodmash/registry'
+NS = 'madmodmash'
+lang = {}
+
+def wjson(path, obj):
+    if '/loot_table/' in path:
+        import lootfmt; obj = lootfmt.conv(obj)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, 'w') as f: json.dump(obj, f, indent=2)
+
+def put_tex(spec, dest):
+    """spec: 'MOD:path' | PIL image. dest relative to textures/ (no .png)"""
+    out = f'{A}/textures/{dest}.png'
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    if isinstance(spec, Image.Image): spec.save(out)
+    else:
+        mod, rel = spec.split(':', 1)
+        src = texlib.path(mod, rel)
+        shutil.copyfile(src, out)
+        meta = src + '.mcmeta'
+        if os.path.exists(meta): shutil.copyfile(meta, out + '.mcmeta')
+    return f'{NS}:{dest}'
+
+def const(id): return id.upper()
+
+# ------------------------------------------------------------------ items
+def gen_items():
+    lines = []
+    tabs = {}
+    for it in ITEMS:
+        iid = it['id']
+        tex = put_tex(it['tex'], f'item/{iid}') if it['tex'] is not None else None
+        parent = 'minecraft:item/handheld' if it['model'] == 'handheld' else 'minecraft:item/generated'
+        wjson(f'{A}/models/item/{iid}.json', {'parent': parent, 'textures': {'layer0': tex}})
+        wjson(f'{A}/items/{iid}.json', {'model': {'type': 'minecraft:model', 'model': f'{NS}:item/{iid}'}})
+        lang[f'item.{NS}.{iid}'] = it['name']
+        if it.get('desc'): lang[f'item.{NS}.{iid}.desc'] = it['desc']
+        lines.append(f'    public static final DeferredItem<Item> {const(iid)} = ITEMS.registerItem("{iid}", {it["ctor"]}, p -> {it["props"]});')
+        tabs.setdefault(it['tab'], []).append(const(iid))
+    # armor
+    for a in ARMOR:
+        names = {'H': 'helmet', 'C': 'chestplate', 'L': 'leggings', 'B': 'boots'}
+        types = {'H': 'HELMET', 'C': 'CHESTPLATE', 'L': 'LEGGINGS', 'B': 'BOOTS'}
+        for p in a['pieces']:
+            iid = f"{a['key']}_{names[p]}"
+            put_tex(a['icons'][p], f'item/{iid}')
+            wjson(f'{A}/models/item/{iid}.json', {'parent': 'minecraft:item/generated', 'textures': {'layer0': f'{NS}:item/{iid}'}})
+            wjson(f'{A}/items/{iid}.json', {'model': {'type': 'minecraft:model', 'model': f'{NS}:item/{iid}'}})
+            nm = a['names'].get(p) or f"{a['name']} {names[p].title()}"
+            lang[f'item.{NS}.{iid}'] = nm
+            lang[f'item.{NS}.{iid}.desc'] = a['perk']
+            extra = ''
+            if a['key'] in ('dragonscale', 'phantom') and p == 'C': extra = '.component(DataComponents.GLIDER, net.minecraft.util.Unit.INSTANCE)'
+            if a['key'] == 'bedrock': extra = '.fireResistant()'
+            lines.append(f'    public static final DeferredItem<Item> {const(iid)} = ITEMS.registerItem("{iid}", MashArmorItem::new, p -> p.humanoidArmor(ModArmorMaterials.{const(a["key"])}, ArmorType.{types[p]}){extra});')
+            tabs.setdefault('armor', []).append(const(iid))
+    # block items
+    for b in BLOCKS:
+        if not b['item']: continue
+        lines.append(f'    public static final DeferredItem<BlockItem> {const(b["id"])} = ITEMS.registerSimpleBlockItem("{b["id"]}", ModBlocks.{const(b["id"])});')
+        tabs.setdefault(b['tab'], []).append(const(b['id']))
+        wjson(f'{A}/items/{b["id"]}.json', {'model': {'type': 'minecraft:model', 'model': b['_itemmodel']}})
+    # spawn eggs
+    for e in entities.ENTITIES:
+        if not e.get('egg'): continue
+        iid = f"{e['id']}_spawn_egg"
+        put_tex(entities.egg_texture(e['egg']), f'item/{iid}')
+        wjson(f'{A}/models/item/{iid}.json', {'parent': 'minecraft:item/generated', 'textures': {'layer0': f'{NS}:item/{iid}'}})
+        wjson(f'{A}/items/{iid}.json', {'model': {'type': 'minecraft:model', 'model': f'{NS}:item/{iid}'}})
+        lang[f'item.{NS}.{iid}'] = f"{e['name']} Spawn Egg"
+        lines.append(f'    public static final DeferredItem<Item> {const(iid)} = ITEMS.registerItem("{iid}", SpawnEggItem::new, p -> p.spawnEgg(ModEntities.{const(e["id"])}.get()));')
+        tabs.setdefault('creatures', []).append(const(iid))
+    src = TEMPLATE_ITEMS.replace('%LINES%', '\n'.join(lines))
+    tablines = []
+    for t, ids in tabs.items():
+        tablines.append(f'        TAB_CONTENTS.put("{t}", List.of(' + ', '.join(ids) + '));')
+    src = src.replace('%TABS%', '\n'.join(tablines))
+    with open(f'{J}/ModItems.java', 'w') as f: f.write(src)
+
+TEMPLATE_ITEMS = '''// GENERATED by scripts/gen.py from content.py - do not edit by hand.
+package com.madmodmash.registry;
+
+import com.madmodmash.MadModMash;
+import com.madmodmash.item.*;
+import com.madmodmash.system.*;
+import java.util.*;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.equipment.ArmorType;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+@SuppressWarnings("unused")
+public final class ModItems {
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MadModMash.MODID);
+    public static final Map<String, List<DeferredItem<? extends Item>>> TAB_CONTENTS = new LinkedHashMap<>();
+
+%LINES%
+
+    static {
+%TABS%
+    }
+
+    private ModItems() {}
+}
+'''
+
+# ------------------------------------------------------------------ blocks
+def block_models(b):
+    bid = b['id']; k = b['kind']; tex = b['tex']
+    bm = f'{NS}:block/{bid}'
+    rt = None
+    def T(spec, suffix=''): return put_tex(spec, f'block/{bid}{suffix}')
+    variants = None
+    if k in ('cube', 'glass', 'leaves'):
+        t = T(tex); m = {'parent': 'minecraft:block/cube_all', 'textures': {'all': t}}
+        if k == 'glass': m['render_type'] = 'minecraft:translucent'
+        if k == 'leaves': m['render_type'] = 'minecraft:cutout_mipped'
+        wjson(f'{A}/models/block/{bid}.json', m); variants = {'': {'model': bm}}
+        if b.get('frames'):
+            pass
+    elif k == 'column':
+        s = T(tex[0], '_side'); e = T(tex[1], '_end')
+        wjson(f'{A}/models/block/{bid}.json', {'parent': 'minecraft:block/cube_column', 'textures': {'side': s, 'end': e}})
+        if 'RotatedPillar' in b['ctor'] or 'Log' in b['ctor']:
+            variants = {'axis=y': {'model': bm}, 'axis=z': {'model': bm, 'x': 90}, 'axis=x': {'model': bm, 'x': 90, 'y': 90}}
+        else: variants = {'': {'model': bm}}
+    elif k == 'carpet':
+        t = T(tex); wjson(f'{A}/models/block/{bid}.json', {'parent': 'minecraft:block/carpet', 'textures': {'wool': t}})
+        variants = {'': {'model': bm}}
+    elif k in ('cross', 'rope'):
+        t = T(tex); wjson(f'{A}/models/block/{bid}.json', {'parent': 'minecraft:block/cross', 'textures': {'cross': t}, 'render_type': 'minecraft:cutout'})
+        variants = {'': {'model': bm}}
+        b['_itemmodel_tex'] = t
+    elif k == 'plant':
+        t = T(tex[0]); t2 = T(tex[1], '_picked')
+        wjson(f'{A}/models/block/{bid}.json', {'parent': 'minecraft:block/cross', 'textures': {'cross': t}, 'render_type': 'minecraft:cutout'})
+        wjson(f'{A}/models/block/{bid}_picked.json', {'parent': 'minecraft:block/cross', 'textures': {'cross': t2}, 'render_type': 'minecraft:cutout'})
+        variants = {'picked=false': {'model': bm}, 'picked=true': {'model': bm + '_picked'}}
+        b['_itemmodel_tex'] = t
+    elif k == 'crate':
+        front = T(tex[0], '_front'); side = T(tex[1], '_side'); top = T(tex[2], '_top')
+        bottom = T(tex[3], '_bottom') if len(tex) > 3 else top
+        wjson(f'{A}/models/block/{bid}.json', {'parent': 'minecraft:block/orientable_with_bottom',
+                                              'textures': {'front': front, 'side': side, 'top': top, 'bottom': bottom}})
+        variants = {f'facing={f}': ({'model': bm, 'y': r} if r else {'model': bm}) for f, r in (('north', 0), ('east', 90), ('south', 180), ('west', 270))}
+    elif k == 'statue':
+        t = T(tex)
+        wjson(f'{A}/models/block/{bid}.json', {'parent': f'{NS}:block/villager_statue_template', 'textures': {'0': t, 'particle': t}})
+        variants = {f'facing={f}': ({'model': bm, 'y': r} if r else {'model': bm}) for f, r in (('north', 180), ('east', 270), ('south', 0), ('west', 90))}
+    elif k == 'head':
+        t = T(tex)
+        wjson(f'{A}/models/block/{bid}.json', {'parent': f'{NS}:block/illager_head_template', 'textures': {'0': t, 'particle': t}})
+        variants = {f'facing={f}': ({'model': bm, 'y': r} if r else {'model': bm}) for f, r in (('north', 180), ('east', 270), ('south', 0), ('west', 90))}
+    wjson(f'{A}/blockstates/{bid}.json', {'variants': variants})
+    if k in ('cross', 'rope', 'plant'):
+        wjson(f'{A}/models/item/{bid}.json', {'parent': 'minecraft:item/generated', 'textures': {'layer0': b['_itemmodel_tex']}})
+        b['_itemmodel'] = f'{NS}:item/{bid}'
+    else:
+        b['_itemmodel'] = bm
+
+def loot_for(b):
+    bid = b['id']; L = b['loot']
+    def pool(entries, cond=None):
+        p = {'rolls': 1, 'entries': entries, 'bonus_rolls': 0}
+        if cond: p['conditions'] = cond
+        return p
+    survives = [{'condition': 'minecraft:survives_explosion'}]
+    if L == 'none': return None
+    if L == 'self':
+        return {'type': 'minecraft:block', 'pools': [pool([{'type': 'minecraft:item', 'name': f'{NS}:{bid}'}], survives)]}
+    if L[0] == 'item':
+        cnt = L[2] if len(L) > 2 else 1
+        e = {'type': 'minecraft:item', 'name': L[1]}
+        if cnt != 1: e['functions'] = [{'function': 'minecraft:set_count', 'count': cnt}]
+        return {'type': 'minecraft:block', 'pools': [pool([e], survives)]}
+    if L[0] == 'ore':
+        silk = {'condition': 'minecraft:match_tool', 'predicate': {'predicates': {'minecraft:enchantments': [{'enchantments': 'minecraft:silk_touch', 'levels': {'min': 1}}]}}}
+        drop = {'type': 'minecraft:item', 'name': L[1], 'functions': [
+            {'function': 'minecraft:set_count', 'count': {'type': 'minecraft:uniform', 'min': L[2], 'max': L[3]}} if L[3] != L[2] else {'function': 'minecraft:set_count', 'count': L[2]},
+            {'function': 'minecraft:apply_bonus', 'enchantment': 'minecraft:fortune', 'formula': 'minecraft:ore_drops'},
+            {'function': 'minecraft:explosion_decay'}]}
+        return {'type': 'minecraft:block', 'pools': [pool([{'type': 'minecraft:alternatives', 'children': [
+            {'type': 'minecraft:item', 'name': f'{NS}:{bid}', 'conditions': [silk]}, drop]}])]}
+
+def gen_blocks():
+    lines = []
+    tags = {'mineable/pickaxe': [], 'mineable/axe': [], 'mineable/shovel': [], 'mineable/hoe': [],
+            'needs_stone_tool': [], 'needs_iron_tool': [], 'needs_diamond_tool': []}
+    # template models
+    import glob
+    statue = json.load(open(texlib.path('HMM', 'blocks/stone').split('/textures/')[0] + '/models/custom/villagerstatue.json'))
+    statue['textures'] = {'0': f'{NS}:block/stone_villager_statue', 'particle': f'{NS}:block/stone_villager_statue'}
+    wjson(f'{A}/models/block/villager_statue_template.json', statue)
+    head = json.load(open(texlib.path('IH', 'blocks/pillagerhead').split('/textures/')[0] + '/models/custom/eevillagerhead.json'))
+    head['textures'] = {'0': f'{NS}:block/illager_head_base', 'particle': f'{NS}:block/illager_head_base'}
+    wjson(f'{A}/models/block/illager_head_template.json', head)
+    for b in BLOCKS:
+        bid = b['id']
+        block_models(b)
+        lt = loot_for(b)
+        if lt: wjson(f'{D}/loot_table/blocks/{bid}.json', lt)
+        lang[f'block.{NS}.{bid}'] = b['name']
+        if b.get('desc'): lang[f'block.{NS}.{bid}.desc'] = b['desc']
+        if b.get('tool'): tags[f'mineable/{b["tool"]}'].append(f'{NS}:{bid}')
+        lvl = b.get('level')
+        if lvl in ('stone', 'iron', 'diamond'): tags[f'needs_{lvl}_tool'].append(f'{NS}:{bid}')
+        lines.append(f'    public static final DeferredBlock<Block> {const(bid)} = BLOCKS.registerBlock("{bid}", {b["ctor"]}, p -> {b["props"]});')
+    for t, vals in tags.items():
+        wjson(f'{RES}/data/minecraft/tags/block/{t}.json', {'replace': False, 'values': vals})
+    src = TEMPLATE_BLOCKS.replace('%LINES%', '\n'.join(lines))
+    with open(f'{J}/ModBlocks.java', 'w') as f: f.write(src)
+
+TEMPLATE_BLOCKS = '''// GENERATED by scripts/gen.py from content.py - do not edit by hand.
+package com.madmodmash.registry;
+
+import com.madmodmash.MadModMash;
+import com.madmodmash.block.*;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+@SuppressWarnings("unused")
+public final class ModBlocks {
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MadModMash.MODID);
+
+%LINES%
+
+    private ModBlocks() {}
+}
+'''
+
+# ------------------------------------------------------------------ armor materials + equipment assets
+def gen_armor():
+    lines = []
+    tags = {}
+    def mat_line(key, stats, sound='ARMOR_EQUIP_LEATHER'):
+        dur, d, ench, tough, kb, repair = stats
+        tag = f'repairs_{key}_armor'
+        tags[tag] = [repair]
+        return (f'    public static final ArmorMaterial {const(key)} = new ArmorMaterial({dur}, defense({d[0]}, {d[1]}, {d[2]}, {d[3]}), {ench}, '
+                f'SoundEvents.{sound}, {float(tough)}f, {float(kb)}f, repairTag("{tag}"), asset("{key}"));')
+    snd = {'leather': 'ARMOR_EQUIP_LEATHER', 'chainmail': 'ARMOR_EQUIP_CHAIN', 'iron': 'ARMOR_EQUIP_IRON', 'diamond': 'ARMOR_EQUIP_DIAMOND'}
+    genbase = {g[0]: g[3] for g in GEN_ARMOR}
+    for a in ARMOR:
+        key = a['key']
+        l1, l2 = a['layers']
+        put_tex(l1, f'entity/equipment/humanoid/{key}')
+        put_tex(l2, f'entity/equipment/humanoid_leggings/{key}')
+        wjson(f'{A}/equipment/{key}.json', {'layers': {'humanoid': [{'texture': f'{NS}:{key}'}], 'humanoid_leggings': [{'texture': f'{NS}:{key}'}]}})
+        sound = snd.get(genbase.get(key, ''), 'ARMOR_EQUIP_IRON' if 'plate' in key or key in ('steel', 'bedrock', 'ruby') else 'ARMOR_EQUIP_LEATHER')
+        lines.append(mat_line(key, a['stats'], sound))
+    # halo: gold circlet on the head
+    halo = Image.new('RGBA', (64, 32), (0, 0, 0, 0)); px = halo.load()
+    for x in range(32, 64):  # hat overlay region (outer layer of head) - draw a band around the head
+        for y in (8, 9):
+            if x < 64: px[x, y] = (255, 214, 64, 255) if (x + y) % 3 else (255, 240, 150, 255)
+    for x in range(40, 48):
+        for y in range(0, 8):
+            if x in (40, 47) or y in (0, 7): px[x, y] = (255, 214, 64, 255)
+    put_tex(halo, 'entity/equipment/humanoid/halo')
+    wjson(f'{A}/equipment/halo.json', {'layers': {'humanoid': [{'texture': f'{NS}:halo'}]}})
+    lines.append(mat_line('halo', (30, [1, 2, 3, 2], 25, 1, 0, 'minecraft:gold_ingot'), 'ARMOR_EQUIP_GOLD'))
+    for tag, vals in tags.items():
+        wjson(f'{D}/tags/item/{tag}.json', {'replace': False, 'values': vals})
+    src = TEMPLATE_ARMOR.replace('%LINES%', '\n'.join(lines))
+    with open(f'{J}/ModArmorMaterials.java', 'w') as f: f.write(src)
+
+TEMPLATE_ARMOR = '''// GENERATED by scripts/gen.py from content.py - do not edit by hand.
+package com.madmodmash.registry;
+
+import com.madmodmash.MadModMash;
+import java.util.EnumMap;
+import java.util.Map;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.item.equipment.EquipmentAsset;
+import net.minecraft.world.item.equipment.EquipmentAssets;
+
+public final class ModArmorMaterials {
+%LINES%
+
+    private static Map<ArmorType, Integer> defense(int boots, int legs, int chest, int helm) {
+        Map<ArmorType, Integer> m = new EnumMap<>(ArmorType.class);
+        m.put(ArmorType.BOOTS, boots); m.put(ArmorType.LEGGINGS, legs); m.put(ArmorType.CHESTPLATE, chest);
+        m.put(ArmorType.HELMET, helm); m.put(ArmorType.BODY, chest);
+        return m;
+    }
+
+    private static TagKey<Item> repairTag(String name) {
+        return TagKey.create(Registries.ITEM, MadModMash.id(name));
+    }
+
+    private static ResourceKey<EquipmentAsset> asset(String name) {
+        return ResourceKey.create(EquipmentAssets.ROOT_ID, MadModMash.id(name));
+    }
+
+    private ModArmorMaterials() {}
+}
+'''
+
+def main():
+    for d in ('textures', 'models', 'items', 'blockstates', 'equipment'):
+        shutil.rmtree(f'{A}/{d}', ignore_errors=True)
+    gen_blocks()
+    gen_armor()
+    gen_items()
+    entities.generate(put_tex, wjson, lang, A, D, J)
+    extra = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'lang_extra.json')))
+    lang.update(extra)
+    wjson(f'{A}/lang/en_us.json', dict(sorted(lang.items())))
+    print('items', len(ITEMS), 'blocks', len(BLOCKS), 'armor sets', len(ARMOR), 'entities', len(entities.ENTITIES), 'lang', len(lang))
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " G ",
+    "GXG",
+    " G "
+  ],
+  "key": {
+    "G": "minecraft:gold_ingot",
+    "X": "minecraft:ink_sac"
+  },
+  "result": {
+    "id": "madmodmash:halo_of_darkness",
+    "count": 1
+  }
+}

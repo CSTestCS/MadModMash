@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:lapis_lazuli",
+    "minecraft:packed_ice"
+  ],
+  "result": {
+    "id": "madmodmash:ice_card",
+    "count": 2
+  }
+}

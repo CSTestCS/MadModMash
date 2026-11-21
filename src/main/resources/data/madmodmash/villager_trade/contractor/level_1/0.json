@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "madmodmash:silver_gildan",
+    "count": 1
+  },
+  "gives": {
+    "id": "madmodmash:blank_contract",
+    "count": 1
+  },
+  "max_uses": 16,
+  "xp": 2,
+  "reputation_discount": 0.05
+}

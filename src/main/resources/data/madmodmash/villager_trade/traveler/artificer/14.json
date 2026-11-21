@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "madmodmash:gold_gildan",
+    "count": 3
+  },
+  "gives": {
+    "id": "madmodmash:snail_calling",
+    "count": 1
+  },
+  "max_uses": 1,
+  "xp": 1,
+  "reputation_discount": 0.05
+}

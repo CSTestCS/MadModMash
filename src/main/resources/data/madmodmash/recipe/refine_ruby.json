@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:krasny_shard",
+    "madmodmash:krasny_shard",
+    "madmodmash:krasny_shard"
+  ],
+  "result": {
+    "id": "madmodmash:ruby",
+    "count": 1
+  }
+}

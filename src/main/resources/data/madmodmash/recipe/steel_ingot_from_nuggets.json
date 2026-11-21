@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:steel_nugget",
+    "madmodmash:steel_nugget",
+    "madmodmash:steel_nugget",
+    "madmodmash:steel_nugget",
+    "madmodmash:steel_nugget",
+    "madmodmash:steel_nugget",
+    "madmodmash:steel_nugget",
+    "madmodmash:steel_nugget",
+    "madmodmash:steel_nugget"
+  ],
+  "result": {
+    "id": "madmodmash:steel_ingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:diamond_gildan",
+    "madmodmash:diamond_gildan",
+    "madmodmash:diamond_gildan",
+    "madmodmash:diamond_gildan",
+    "madmodmash:diamond_gildan",
+    "madmodmash:diamond_gildan",
+    "madmodmash:diamond_gildan",
+    "madmodmash:diamond_gildan",
+    "madmodmash:diamond_gildan"
+  ],
+  "result": {
+    "id": "madmodmash:netherite_gildan",
+    "count": 1
+  }
+}

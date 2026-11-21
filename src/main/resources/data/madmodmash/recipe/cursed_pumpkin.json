@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:carved_pumpkin",
+    "madmodmash:withered_soul",
+    "minecraft:soul_torch"
+  ],
+  "result": {
+    "id": "madmodmash:cursed_pumpkin",
+    "count": 1
+  }
+}

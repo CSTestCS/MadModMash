@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:ostrum_ingot",
+    "madmodmash:ostrum_ingot",
+    "madmodmash:ostrum_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:morium_shard",
+    "count": 1
+  }
+}

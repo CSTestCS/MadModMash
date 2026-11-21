@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:sanatia_powder",
+    "minecraft:prismarine_crystals"
+  ],
+  "result": {
+    "id": "madmodmash:aquarius_powder",
+    "count": 2
+  }
+}

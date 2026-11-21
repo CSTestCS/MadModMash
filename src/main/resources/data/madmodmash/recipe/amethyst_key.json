@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XX",
+    "X ",
+    "X "
+  ],
+  "key": {
+    "X": "minecraft:amethyst_shard"
+  },
+  "result": {
+    "id": "madmodmash:amethyst_key",
+    "count": 1
+  }
+}

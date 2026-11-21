@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:beyaz_shard",
+    "madmodmash:beyaz_shard",
+    "madmodmash:beyaz_shard"
+  ],
+  "result": {
+    "id": "madmodmash:biel_gem",
+    "count": 1
+  }
+}

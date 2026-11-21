@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "key": {
+    "X": "minecraft:lapis_lazuli"
+  },
+  "result": {
+    "id": "madmodmash:wizard_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ender_pearl",
+    "minecraft:lapis_lazuli",
+    "madmodmash:embers"
+  ],
+  "result": {
+    "id": "madmodmash:return_token",
+    "count": 2
+  }
+}

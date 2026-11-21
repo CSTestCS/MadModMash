@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " X",
+    "S "
+  ],
+  "key": {
+    "X": "minecraft:flint",
+    "S": "minecraft:bone"
+  },
+  "result": {
+    "id": "madmodmash:flint_carving_knife",
+    "count": 1
+  }
+}

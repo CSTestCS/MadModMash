@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " X ",
+    "XGX",
+    "S  "
+  ],
+  "key": {
+    "X": "madmodmash:bee_lense",
+    "G": "minecraft:glass_pane",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "madmodmash:bee_magnifier",
+    "count": 1
+  }
+}

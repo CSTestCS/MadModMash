@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": "madmodmash:fabric"
+  },
+  "result": {
+    "id": "madmodmash:tattered_chestplate",
+    "count": 1
+  }
+}

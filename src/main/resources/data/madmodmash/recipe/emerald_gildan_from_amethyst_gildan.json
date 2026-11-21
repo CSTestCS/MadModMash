@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:amethyst_gildan"
+  ],
+  "result": {
+    "id": "madmodmash:emerald_gildan",
+    "count": 9
+  }
+}

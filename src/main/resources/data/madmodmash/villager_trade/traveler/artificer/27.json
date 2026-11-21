@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "madmodmash:emerald_gildan",
+    "count": 3
+  },
+  "gives": {
+    "id": "madmodmash:halo_of_light",
+    "count": 1
+  },
+  "max_uses": 1,
+  "xp": 1,
+  "reputation_discount": 0.05
+}

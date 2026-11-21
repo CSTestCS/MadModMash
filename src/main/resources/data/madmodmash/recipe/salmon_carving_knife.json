@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " X",
+    "S "
+  ],
+  "key": {
+    "X": "madmodmash:strong_salmon_scale",
+    "S": "minecraft:bone"
+  },
+  "result": {
+    "id": "madmodmash:salmon_carving_knife",
+    "count": 1
+  }
+}

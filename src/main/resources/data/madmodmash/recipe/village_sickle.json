@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " XX",
+    "  X",
+    " S "
+  ],
+  "key": {
+    "X": "minecraft:iron_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "madmodmash:village_sickle",
+    "count": 1
+  }
+}

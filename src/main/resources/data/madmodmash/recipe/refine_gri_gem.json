@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:szarite_shard",
+    "madmodmash:szarite_shard",
+    "madmodmash:szarite_shard"
+  ],
+  "result": {
+    "id": "madmodmash:gri_gem",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "wants": {
+    "id": "madmodmash:emerald_gildan",
+    "count": 1
+  },
+  "gives": {
+    "id": "madmodmash:legendary_hunt_contract",
+    "count": 1
+  },
+  "max_uses": 3,
+  "xp": 20,
+  "reputation_discount": 0.05
+}

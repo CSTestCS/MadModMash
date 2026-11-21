@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": "madmodmash:squid_skin"
+  },
+  "result": {
+    "id": "madmodmash:wetsuit_boots",
+    "count": 1
+  }
+}

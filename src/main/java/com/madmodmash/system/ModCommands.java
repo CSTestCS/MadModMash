@@ -44,9 +44,8 @@ public final class ModCommands {
                         .then(Commands.literal("start").then(Commands.argument("type", StringArgumentType.word())
                                 .suggests((c, b) -> SharedSuggestionProvider.suggest(Arrays.stream(WorldEvents.Type.values()).map(t -> t.name().toLowerCase(Locale.ROOT)), b))
                                 .executes(c -> {
-                                    ServerPlayer p = c.getSource().getPlayerOrException();
                                     WorldEvents.Type t = WorldEvents.Type.valueOf(StringArgumentType.getString(c, "type").toUpperCase(Locale.ROOT));
-                                    WorldEvents.get(c.getSource().getServer()).start(c.getSource().getServer().overworld(), t, p.blockPosition());
+                                    WorldEvents.get(c.getSource().getServer()).start(c.getSource().getServer().overworld(), t, net.minecraft.core.BlockPos.containing(c.getSource().getPosition()));
                                     return 1; }))))
                 .then(Commands.literal("calling").then(Commands.argument("calling", StringArgumentType.word())
                         .requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))

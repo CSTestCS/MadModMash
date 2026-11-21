@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:cobweb",
+    "madmodmash:toxic_string"
+  ],
+  "result": {
+    "id": "madmodmash:toxic_web",
+    "count": 1
+  }
+}

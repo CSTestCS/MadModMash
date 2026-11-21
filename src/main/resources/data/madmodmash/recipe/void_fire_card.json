@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:lapis_lazuli",
+    "minecraft:ender_pearl"
+  ],
+  "result": {
+    "id": "madmodmash:void_fire_card",
+    "count": 2
+  }
+}

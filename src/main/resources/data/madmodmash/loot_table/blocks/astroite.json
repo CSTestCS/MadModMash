@@ -10,50 +10,33 @@
             {
               "type": "minecraft:item",
               "name": "madmodmash:astroite",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
+              "condition": "minecraft:tool/can_silk_touch"
             },
             {
               "type": "minecraft:item",
               "name": "madmodmash:astroite_chunk",
-              "functions": [
+              "modifier": [
                 {
-                  "function": "minecraft:set_count",
                   "count": {
                     "type": "minecraft:uniform",
                     "min": 1,
                     "max": 2
-                  }
+                  },
+                  "type": "minecraft:set_count"
                 },
                 {
-                  "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
+                  "formula": "minecraft:ore_drops",
+                  "type": "minecraft:apply_bonus"
                 },
                 {
-                  "function": "minecraft:explosion_decay"
+                  "type": "minecraft:explosion_decay"
                 }
               ]
             }
           ]
         }
-      ],
-      "bonus_rolls": 0
+      ]
     }
   ]
 }

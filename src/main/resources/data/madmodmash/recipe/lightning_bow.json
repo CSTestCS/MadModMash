@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:bow",
+    "minecraft:lightning_rod",
+    "madmodmash:flavum_ingot"
+  ],
+  "result": {
+    "id": "madmodmash:lightning_bow",
+    "count": 1
+  }
+}

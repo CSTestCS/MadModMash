@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:stiff_feather",
+    "minecraft:ink_sac",
+    "minecraft:amethyst_shard"
+  ],
+  "result": {
+    "id": "madmodmash:enchanted_quill",
+    "count": 1
+  }
+}

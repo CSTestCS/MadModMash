@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "UU"
+  ],
+  "key": {
+    "U": "madmodmash:unholy_cloth"
+  },
+  "result": {
+    "id": "madmodmash:evocation_carpet",
+    "count": 3
+  }
+}

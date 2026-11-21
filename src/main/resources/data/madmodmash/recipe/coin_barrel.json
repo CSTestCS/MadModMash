@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "GBG",
+    " G "
+  ],
+  "key": {
+    "G": "madmodmash:gold_gildan",
+    "B": "minecraft:barrel"
+  },
+  "result": {
+    "id": "madmodmash:coin_barrel",
+    "count": 1
+  }
+}

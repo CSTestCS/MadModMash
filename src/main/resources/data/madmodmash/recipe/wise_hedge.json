@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LCL",
+    "C C",
+    "LCL"
+  ],
+  "key": {
+    "L": "#minecraft:leaves",
+    "C": "madmodmash:creeper_leaves"
+  },
+  "result": {
+    "id": "madmodmash:wise_hedge",
+    "count": 4
+  }
+}

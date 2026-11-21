@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " F ",
+    "BGB",
+    " F "
+  ],
+  "key": {
+    "F": "madmodmash:alpha_wolf_fur",
+    "B": "minecraft:bone",
+    "G": "minecraft:gold_ingot"
+  },
+  "result": {
+    "id": "madmodmash:wolf_totem",
+    "count": 1
+  }
+}

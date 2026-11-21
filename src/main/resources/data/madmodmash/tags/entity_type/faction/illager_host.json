@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:illager",
+    "minecraft:ravager",
+    "minecraft:vex",
+    "minecraft:witch",
+    "madmodmash:illager_hero",
+    "madmodmash:technomancer",
+    "madmodmash:summoner",
+    "madmodmash:stone_golem",
+    "madmodmash:redstone_minion",
+    "madmodmash:redstone_turret",
+    "madmodmash:redstone_nexus"
+  ]
+}

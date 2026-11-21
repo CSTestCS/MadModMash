@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "madmodmash:copper_gildan",
+    "madmodmash:copper_gildan",
+    "madmodmash:copper_gildan",
+    "madmodmash:copper_gildan",
+    "madmodmash:copper_gildan",
+    "madmodmash:copper_gildan",
+    "madmodmash:copper_gildan",
+    "madmodmash:copper_gildan",
+    "madmodmash:copper_gildan"
+  ],
+  "result": {
+    "id": "madmodmash:silver_gildan",
+    "count": 1
+  }
+}
