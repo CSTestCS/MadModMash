@@ -228,11 +228,29 @@ def part_code(p, parent, out, indent='        '):
                f'PartPose.offsetAndRotation({", ".join(fmt(x) for x in pose)}));')
     for c in p['children']: part_code(c, var, out, indent)
 
+def emissive_alpha(spec):
+    """Older mods drew glow layers on an opaque black background because their eyes layer blended
+    additively, so black added nothing. 26.3's eyes layer honours alpha, so the black would paint the whole
+    mob. Turn brightness into alpha (and rescale the colour) to keep the additive look."""
+    im = load(spec)
+    px = im.load()
+    for y in range(im.height):
+        for x in range(im.width):
+            r, g, b, a = px[x, y]
+            m = max(r, g, b)
+            if a == 0 or m < 8: px[x, y] = (0, 0, 0, 0); continue
+            if a < 255: continue  # already uses real transparency
+            px[x, y] = (r * 255 // m, g * 255 // m, b * 255 // m, m)
+    return im
+
+EMISSIVE_SUFFIXES = ('_e', '_glow', '_eyes')
+
 def generate(put_tex, wjson, lang, A, D, Jdir):
     # textures
     for e in ENTITIES:
         for dest, src in e['tex'].items():
             if e['id'] == 'herobrine': src = herobrine_skin()
+            if dest.endswith(EMISSIVE_SUFFIXES): src = emissive_alpha(src)
             put_tex(src, dest)
         lang[f'entity.madmodmash.{e["id"]}'] = e['name']
     eyes = Image.new('RGBA', (64, 64), (0, 0, 0, 0))
